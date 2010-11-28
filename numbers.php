@@ -3,9 +3,21 @@ require_once("connect.php");
 require_once("utils.php");
 
 printHeader();
+  $number=$_REQUEST['number'];
+
+if(isset($_REQUEST['newNumber']))
+  {
+   $number=$_REQUEST['newNumber'];
+   $query="select * from incoming_numbers where incomingNumber='$number'";
+   $result=mysql_query($query);
+   if(mysql_num_rows($result)==0)
+     {
+       $query="insert into incoming_numbers (incomingNumber) values('$number')";
+       mysql_query($query);
+     }
+  }
 
 
-$number=$_REQUEST['number'];
 echo "<div class='incomingNumber'>Forwarding numbers for $number</div>";
 $query="select * from incoming_numbers where incomingNumber='$number'";
 $result=mysql_query($query);
@@ -63,7 +75,7 @@ if(mysql_num_rows($result)>0)
 	  $checked="checked";
 	else
 	  $checked="";
-	echo "<div class='line rounded'>";
+	echo "<div class='line rounded $checked'>";
 	echo "<div class='name'>$name</div>";
 	echo "<div class='number'>$forwardingNumber</div>";
 	echo "<div class='forwardSelect'>Forward calls to this number:  <input type='radio' name='selectForwardingNumber' value='$forwardingId' $checked></div>";
