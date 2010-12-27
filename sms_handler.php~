@@ -1,0 +1,11 @@
+<?php
+
+$keys=array_keys[$_REQUEST);
+$values=array_values[$_REQUEST);
+for($i=0;$i<count($_REQUEST);$i++)
+  {
+    
+  }
+
+
+?>

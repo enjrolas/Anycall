@@ -1,0 +1,10 @@
+<?php
+$rootURL="http://www.artiswrong.com/watergate";
+header("content-type: text/xml");
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+echo "<Response>
+<Gather action='".$rootURL."/dial.php'>
+<Say>Dial the number you'd like to call, and then hit pound</Say>
+</Gather>
+</Response>";
+?>

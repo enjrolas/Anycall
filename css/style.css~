@@ -1,0 +1,6 @@
+div.line{
+    margin-left: 10%;
+    margin-right:10%;
+    background-color: #C3F5F7;
+    
+}

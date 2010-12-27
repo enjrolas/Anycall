@@ -1,0 +1,22 @@
+<?php
+$username="meetlie";
+$password="startupweekend";
+$host="localhost";
+$database="meetlie";
+
+$cookie_name="meetlie_user";
+$root_url="http://www.meetlie.com/";
+
+define("CONSUMER_KEY", "zxMrJx4HrfkeTCkGXCQmBw");
+define("CONSUMER_SECRET", "R8cBFMXblf0v9sOs9HKUsq4l9xNIZ0BVppwRSkQWxQ");
+define("OAUTH_CALLBACK", $root_url."php/callback.php");
+
+
+//define('TWEETING', 'FALSE');
+define('TWEETING', 'TRUE');
+
+$connection = mysql_connect($host, $username, $password) or die ('Error connecting to mysql');
+mysql_select_db($database, $connection);
+
+
+?>

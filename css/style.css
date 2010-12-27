@@ -1,0 +1,73 @@
+body{
+background-color: #D9D9D9;
+}
+
+div{
+    float:left;
+}
+
+div.line{
+    width:80%;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #C3F5F7;
+
+}
+
+div.newLine{
+    padding: 2px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #C3F5A7;
+}
+
+div.incomingNumber{
+    padding: 15px;
+    width: 100%;
+    background-color: F58E8E;
+}
+
+div.checked{
+    background-color: 73DAFA;
+}
+
+div.rounded{
+
+/*    -moz-border-radius-bottomleft:5px;   */ 
+    -moz-border-radius-bottomright:20px;
+/*    -moz-border-radius-topleft:20px;*/
+    -moz-border-radius-topright:20px;      
+
+/*    -webkit-border-bottom-left-radius:5px;*/
+    -webkit-border-bottom-right-radius:20px;
+ /*   -webkit-border-top-left-radius:20px;*/
+    -webkit-border-top-right-radius:20px;      
+
+}
+
+div.name{
+    width:  30%;
+    float:left;
+    padding:  20px;
+}
+
+div#submit{
+    margin-left:  10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+}
+
+div.number{
+    width:  30%;
+    float: left;
+    padding:  20px;
+}
+div.forwardSelect{
+    padding: 20px;
+}
